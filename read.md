@@ -18,4 +18,22 @@ Worthwhile notes:
 4. We can change default output by adding source path and '--output' +
    destination path to webpack command ex. 
    "webpack --mode development ./foo/src/js/index.js --output ./foo/main.js"
-5. 
+5. Webpack also supports transpilation of es6+ to es5 so that old browsers
+   can do something out of it. Webpack provides this feature by LOADERS.
+   In case of JS we use babel-loader
+
+    npm i @babel/core babel-loader @babel/preset-env --save-dev
+    + webpack.config.js file (can change with scripts section + --module-bind js=babel-loader )
+
+    for react transpiling
+    npm i react react-dom --save-dev 
+    npm i @babel/preset-react --save-dev
+
+    for html proccessing
+    npm i html-webpack-plugin html-loader --save-dev
+
+    when html is setup the js is automaticlly bundled with html
+
+    for css
+    npm i mini-css-extract-plugin css-loader --save-dev
+
