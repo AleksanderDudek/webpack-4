@@ -4,6 +4,7 @@ const App = () => {
   return (
     <div>
       <p>React here!</p>
+      <h2> things happened here!</h2>
     </div>
   );
 };

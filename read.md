@@ -37,3 +37,8 @@ Worthwhile notes:
     for css
     npm i mini-css-extract-plugin css-loader --save-dev
 
+    for webpack dev server 
+    npm i webpack-dev-server --save-dev
+
+
+Ok. 
